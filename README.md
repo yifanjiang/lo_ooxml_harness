@@ -134,10 +134,11 @@ As follows, I would analyze the possible improvements of the steps
 taking all above procedures as a whole, in which the procedures
 actually share lots of common characteristics possibly to be
 automatically implemented, more efficient or better organized:
-    1. Test documents mangement
-    2. Reference documents generating
-    3. Automated verification
-    4. Spot regressions
+
+1. Test documents mangement
+2. Reference documents generating
+3. Automated verification
+4. Spot regressions
 
 #### Test documents management ####
 
