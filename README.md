@@ -248,14 +248,14 @@ A test documents management is supposed to play the major roles as:
 
 - The documents in the storage is mainly classified by file names
 - Easily generate sample documents:
-    As stated before, each of the testing topic should have 4 sample
-    documents as:
-        * OOXML for import testing
-        * MSO03 for export testing
-        * 2 PDFs for both respectively
-    What we want to make it a bit easier is to provide one testing
-    file, either OOXML or MSO03, then generate the reset 3 files
-    automatically.
+  As stated before, each of the testing topic should have 4 sample
+  documents as:
+    * OOXML for import testing
+    * MSO03 for export testing
+    * 2 PDFs for both respectively
+  What we want to make it a bit easier is to provide one testing
+  file, either OOXML or MSO03, then generate the reset 3 files
+  automatically.
 - Uniformly store generated original test documents
 - Uniformly store PDF counterparts of these test documents
 
