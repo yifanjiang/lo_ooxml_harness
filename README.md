@@ -69,7 +69,7 @@ can be summarized as:
       correctly
     - *Hang/Crash Fail* - If Libreoffice is hang/crash during the
       opening procedure, the testing is considered as FAIL.
-5. In the condition of testing FAIL and it is NOT REGRESSION:
+5. In the condition of testing FAIL and it is a REGRESSION:
     - Feature fail:
       Describe the issue and report the bug in bugzilla with the
       following documents attached:
@@ -99,7 +99,7 @@ can be summarized as:
       correctly (i.e hyperlinks, indexes, fields etc.)
     - *Hang/Crash Fail* - If Libreoffice is hang/crash during the
       opening procedure, the testing is considered as FAIL.
-5. In the condition of testing FAIL and it is NOT REGRESSION
+5. In the condition of testing FAIL and it is a REGRESSION
     - Feature Fail
       Describe the issue and report the bug in bugzilla with the
       following documents attached:
@@ -140,7 +140,7 @@ input/output document formats:
       consistently in MSOffice.
     - Hang/Crash Fail - If Libreoffice is hang/crash during the
       converting procedure in 3.1 and 3.2
-5. In the condition of testing FAIL and it is NOT REGRESSION
+5. In the condition of testing FAIL and it is a REGRESSION
     - Feature failure Identify it is an import or export
       problem. Describe the issue and report the bug in bugzilla with
       the following documents attached:
