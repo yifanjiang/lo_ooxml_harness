@@ -148,7 +148,7 @@ following aspects one by one:
 
 #### Test documents management ####
 
-Consider to manage hundreds of test documents, 2 major problems come
+Consider to manage hundreds of test documents, 3 major problems come
 into the testing practices.
 
 - Sample documents and reference PDF documents
@@ -217,15 +217,68 @@ time. Meanwhile we want to tell if the bug has been reported.
 
 ### Requirements Specification ###
 
+This section targets to give specific requirements according to each
+of the above analysis.
+
 #### Test documents management ####
+
+A test documents management is supposed to play the major roles as:
+
+- The documents in the storage is mainly classified by file names
+- Easily generate sample documents:
+    As stated before, each of the testing topic should have 4 sample
+    documents as:
+        * OOXML for import testing
+        * MSO03 for export testing
+        * 2 PDFs for both respectively
+    What we want to make it a bit easier is to provide one testing
+    file, either OOXML or MSO03, then generate the reset 3 files
+    automatically.
+- Uniformly store generated original test documents
+- Uniformly store PDF counterparts of these test documents
 
 #### Results documents management ####
 
+The testing results can be on various testing machines. It makes sense
+to gather them together to a single machine for future reference
+automatically.
+
+For the sake of frequent comparison between testing result and testing
+documents, it is reasonable to put all the test results on the same
+storage of the test documents.
+
+#### Manual verification ####
+
+We should provide a system make the manual verification easier:
+
+1. Testing results would be viewed intuitively to provide:
+    - raw graphics resulting from corresponding pdf files
+    - a single level of UI to show out the graphics for easier visual comparison
+2. Testing results report view is sharable so that other people could
+   see the result easily, which makes it preferrable to be a web based
+   view.
+3. Testing results, test documents as well as corresponding PDFs can
+   be easily navigated and acquired in the report view.
+
 #### Automated verification ####
 
-#### Manually verification ####
+Currently, we will use graphic techniques to verify the similarity pdf
+results.
+
+The automated verification results should be reflected and merged into
+the manual verification UI mentioned before.
 
 #### Spot regressions ####
+
+We may also bring certain level of automation for regression
+identification by:
+
+1. Search bugzilla automatically for similar attachments
+2. Compare the test results automatically with old testing results,
+   leveraging techniques in automated verification section.
+
+The automatic regression analysis should be reflected and merged into
+the manual verification UI mentioned before.
 
 Design and Implementation
 -------------------------
