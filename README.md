@@ -173,7 +173,7 @@ following aspects one by one:
 Consider to manage hundreds of test documents, 3 major problems come
 into the testing practices.
 
-- Sample documents and reference PDF documents
+##### Sample documents and reference PDF documents #####
 
 The test input can be either an OOXML or MSO03 file for import or
 export test respectively. For a particular testing topic
@@ -186,10 +186,11 @@ for sharing bugs with other people (who probably do not have MSOffice
 to see a correct behavior).
 
 As a results the manifest of what we need for sample documents are:
-    * OOXML, MSO03 documents
-    * PDF documents for each of the testing samples
 
-- Test documents classification
+* OOXML, MSO03 documents
+* PDF documents for each of the testing samples
+
+##### Test documents classification #####
 
 We once thought to use external test case management tool to tag or
 name the testing topics for test documents. However relying on
@@ -198,7 +199,7 @@ convenience, especially when the test documents partake as standalone
 files. Alternatively defining the high level test topic on the file
 name itself would bring more benifits for easiness.
 
-- Test documents storage
+#####  Test documents storage #####
 
 The test documents set can be evolved by adding, updating and removing
 from time to time. So it is not bad to store the test samples in a
@@ -247,12 +248,12 @@ of the above analysis.
 A test documents management is supposed to play the major roles as:
 
 - The documents in the storage is mainly classified by file names
-- Easily generate sample documents:
-  As stated before, each of the testing topic should have 4 sample
-  documents as:
+- Easily generate sample documents. As stated before, each of the
+  testing topic should have 4 sample documents as:
     * OOXML for import testing
     * MSO03 for export testing
     * 2 PDFs for both respectively
+  
   What we want to make it a bit easier is to provide one testing
   file, either OOXML or MSO03, then generate the reset 3 files
   automatically.
