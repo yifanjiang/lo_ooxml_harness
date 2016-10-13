@@ -1,5 +1,11 @@
 #!/usr/bin/evn python
 
+# 1. Manually fetch HAR from Kawa's site (using chrome's Developer Tools -> Network)
+# 2. Save HAR locally to a directory named as "har" 
+# 3. python kw.py > index.html
+# TODO: Music is not hanled
+# TODO: Some irrelevant css and js are not hanled
+
 import json, hashlib
 from haralyzer import HarPage
 
